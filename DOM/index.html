@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        .box {
+            background-color: brown;
+            color: white;
+            border: 5px solid gold;
+        }
+
+        .xyz {
+            background-color: aqua;
+        }
+        .prahlad{
+            background-color: rgb(37, 88, 208);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DOM</h1>
+    
+    <div class="box" id="abcd">
+        <p class="xyz box parent-div">
+            
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste beatae laudantium, non deleniti
+            nemo in minima quibusdam impedit cumque blanditiis adipisci, quasi mollitia dolores sint.</p>
+            
+            <ul>
+            <li>
+                javascript1
+            </li>
+            <li>
+                javascript2
+            </li>
+            <li>
+                javascript3
+            </li>
+            <li>
+                javascript4
+            </li></ul>
+        <button onclick="change()">Onchange</button>
+        <!-- <h6 class="xyz">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste beatae laudantium, non deleniti  nemo in minima quibusdam impedit cumque blanditiis adipisci, quasi mollitia dolores sint.</h6> -->
+    </div>
+    <script>
+        // let data=document.getElementsByClassName("xyz");
+        // console.log(data[1]);
+
+        let data = document.getElementsByClassName('box');
+        let para = document.getElementsByClassName('xyz')
+
+        // console.log(data[0].innerHTML);
+        // console.log(para[0].innerText);
+
+        // console.log(data[0].getAttribute('class'));
+        // console.log(para[0].getAttribute('class'));
+
+        // console.log(para[0].getAttributeNode('class'));
+
+        // console.log(data[0].attributes[1].value);
+
+        // const change = () => {
+        //     data[0].setAttribute('class', 'xyz')
+        // }
+        
+        // console.log(data[0].removeAttribute('class'));
+
+        // let example=document.getElementById('abcd')
+        // console.log(example);
+        // let examp=document.getElementsByTagName('p')
+        // console.log(examp);
+    
+    
+    //
+    
+    // const  change=()=>{
+    //     let sel =document.querySelector('p').style.backgroundColor="red"
+    //     console.log(sel);
+    // }
+    
+    // let sel =document.querySelector('#abcd')
+    // console.log(sel);
+
+    // let arraysel =document.querySelectorAll('.box')
+    // console.log(arraysel);
+    
+
+    // -----------Style-------------
+
+
+    // document.querySelector('.xyz').style.opacity=.0;
+    
+        // -----------class Name-------------
+    
+    
+    // const change=()=>{
+    //     document.querySelector('.xyz').className='new-class box'
+    // }
+    
+
+    // ------Class List---------------
+    
+
+//     document.querySelector('.xyz').classList.add('new-class');
+
+//     document.querySelector('.xyz').classList.remove('box');
+
+//     document.querySelector('.xyz').classList.toggle('prahlad');
+
+//    let x= document.querySelector('.xyz').classList.item(0);
+//    console.log(x);
+
+//    let y= document.querySelector('.xyz').classList.contains('prahlad');
+//    console.log(y);
+//    let z= document.querySelector('.xyz').classList.contains('.prahlad');
+//    console.log(z);
+
+// -------------------Traversal methods-----------
+    
+
+
+        // let x=document.querySelector('.parent-div').parentElement;
+        // console.log(x);
+
+        //parent
+        // let x=document.querySelector('html').parentElement;
+        // console.log(x);                           //null
+
+
+        // let y=document.querySelector('html').parentNode;
+        // console.log(y);   //#document
+
+        //children
+
+        // let y=document.querySelector('.box').children;
+        // console.log(y); 
+        // let x=document.querySelector('.box').childNodes;
+        // console.log(x); 
+
+
+        //child
+
+        // let a=document.querySelector('.xyz').firstChild;
+        // console.log(a); 
+        // let b=document.querySelector('.xyz').lastChild;
+        // console.log(b);
+
+
+        // ****************************
+
+        // let c=document.querySelector('.box').firstElementChild;
+        // console.log(c); 
+        // let d=document.querySelector('.box').lastElementChild;
+        // console.log(d);
+
+        // ******************************
+
+        // previousSibling
+        // .nextSibling 
+     
+     
+        // let c=document.querySelector('.box').previousSibling;
+        // console.log(c); 
+        // let d=document.querySelector('.box').lastElementChild;
+        // console.log(d);
+
+        // ,previousElementSibling 
+        // ,nextElementSibling
+
+ 
+        // let c=document.querySelector('.box').previousElementSibling;
+        // console.log(c); 
+        // let d=document.querySelector('.box').nextElementSibling;
+        // console.log(d);
+    </script>
+</body>
+
+</html>

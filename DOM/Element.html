@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element</title>
+    <style>
+        body{
+            background-image: -webkit-linear-gradient(0deg, rgb(107, 107, 181),rgb(173, 76, 76),rgb(137, 137, 86));
+        }
+    </style>
+</head>
+
+<body>
+    <div class="target">
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus perferendis provident voluptas est nam
+            doloribus labore sed dignissimos ea illum!</h3>
+        <h1>Heading</h1>
+
+
+    </div>
+    <script>
+
+        //create html tag 
+
+        // let para = document.createElement('p');
+        // console.log(para);
+
+        //create html tag 
+
+        // let sel=document.querySelector('body');
+        // let cm=document.createComment('this is out comment')
+        // console.log(cm);
+        // sel.appendChild(cm)
+
+        // create content
+
+        // let sel = document.querySelector('h1')
+        // let con = document.createTextNode('i am content created by js'
+        // )
+        // console.log(con);
+        // para.appendChild(con)
+        // console.log(para);
+        // sel.appendChild(para)
+        // console.log(sel);
+
+        //replace child
+
+        // let Newpara=document.createElement('p');
+        // let con=document.createTextNode('content created using js');
+        // Newpara.appendChild(con)
+
+        // let target = document.getElementsByClassName('target')[0];
+        // let oldelement=target.firstElementChild;
+        // target.replaceChild(Newpara,oldelement);        
+
+        //Remove child
+
+        // let target =document.getElementsByClassName('target')[0];
+        // let Rmelement=target.lastElementChild;
+        // target.removeChild(Rmelement);
+
+
+        // let s= target.cloneNode(false);
+        // console.log(s);
+
+        //insertAdjacentHtml
+
+        let sel = document.querySelector('.target');
+        sel.insertAdjacentHTML('afterbegin', '<h3>This is Made By After Begin</h3>')
+        sel.insertAdjacentHTML('afterend', '<h3>This is Made By After End</h3>')
+
+        sel.insertAdjacentHTML('beforebegin', '<h3>This is Made By Before begin</h3>')
+        sel.insertAdjacentHTML('beforeend', '<h3>This is Made By  Before end</h3>')
+
+    </script>
+</body>
+
+</html>

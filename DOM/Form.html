@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            height: 500vh;
+        }
+    </style>
+</head>
+
+<body onscroll="load()">
+
+    <div class="container1">
+        <h1>Heading</h1>
+        <form action="">
+            <input type="text" name="name" id="personname">
+        </form>
+    </div>
+    <div class="container1">
+        <h1>Heading</h1>
+        <form action="">
+            <input type="text" onfocus="handleFocus(this)" onblur="handleBlur(this)" name="name" id="personname1">
+            <input type="email" onfocus="handleFocus(this)" onblur="handleBlur(this)" name="email" id="personname2">
+            <input type="password" onfocus="handleFocus(this)" onblur="handleBlur(this)" onchange="handleChange(event)" oninput="handleInput(event)" name="password" id="personname3" >
+        </form>
+
+        <button onkeypress="handleDown(event)">KEY PRESS</button>
+
+    </div>
+
+
+
+    <script>
+        // @@@@@@@@@@@@@@@@@@@@@
+
+        // let sel = document.querySelector(".container").childNodes[3][0];
+        // console.log(sel);
+
+        // --------hasattribute---------
+
+        // let bool = sel.hasAttribute('type');
+        // console.log(bool);
+
+        //---------haschildnodes-------
+
+        //    let con = document.querySelector(".container");
+        //    let bool=con.hasChildNodes();
+        //    console.log(bool);
+
+        //----------isequal node---------
+
+        // let con = document.getElementsByClassName("container1")[0];
+        // let con1 = document.getElementsByClassName("container1")[1];
+
+        // let bool = con.isEqualNode(con1);
+        // console.log(bool);
+// -----------------------------------------------------
+
+        const handleFocus = (inputval) => {
+            inputval.style.backgroundColor = "green"
+        }
+
+        const handleBlur = (inputval) => {
+            inputval.style.backgroundColor = "green"
+        }
+
+
+        const handleChange = (ev) => {
+            // console.log(ev);
+            let val=ev.target.value
+            console.log(val);
+        }
+
+        const handleInput= (ev) => {
+            // console.log(ev);
+            let val=ev.target.value
+            console.log(val);
+        }
+
+// -----------------------------
+
+        const load = () => {
+            console.log("hi prahlad");
+        }
+
+
+        const handleDown = (event) => {
+            if (event.key === 'Enter') {
+                document.getElementsByTagName('body')[0].style.backgroundColor = "red"
+            }
+        };
+
+
+    </script>
+</body>
+
+</html>
